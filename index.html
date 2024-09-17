@@ -3,27 +3,88 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>My Title</title>
+  <title>Assignment 2</title>
   <meta name="Homepage" content="Homepage">
   <link rel="stylesheet" href="styles.css?v=1.0">
+  <link rel="icon" href="resources/bitmap.svg" type="image/svg+xml">
 </head>
 
 <body>
-  <svg>
-      <rect/>
-      <circle/>
-      <rect/>
-      <polygon/>
-      <text>
-        Willkommen!
-      </text>
-      <g>
-          <path/>
-      `   <circle>
-          <animateMotion/>
-        </circle>
-      </g>
-  </svg>
+  <svg width="100%" height="300" version="1.1">
+    <rect width="100%" height="300"/>
+    <circle cx="0%" cy="50%" r="400" fill="yellow" stroke="black" fill-opacity="0.8" />
+    <circle cx="62%" cy="17%" r="9" fill = "lightgray" stroke="black" fill-opacity="90">
+      <animateMotion dur="50s" repeatCount="indefinite" path="M 100,100 A 100,50 0 0,0 300,100 A 100,50 0 0,0 100,100"/>
+    </circle>
+    <circle cx="75%" cy="40%" r="40" fill = "blue" stroke="black" fill-opacity="100" />
+     <svg x="74%" y="35%" width="100" height="100" viewBox="0 0 100 100">
+       <polygon cx="75%" cy="40%" points="0,0 -2,5 0,10 5,13 12,14 15,18 16,26 16,31 16,39 19,43 31,47 39,47 43,38 42,26 38,15 37,5 43,0 36,-7 23,-8 9,-7 4,-6 1,-4" fill="green"/>
+     </svg>
+     <text x="30%" y="20%" font-family="Verdana" font-size="55" fill="yellow" stroke="black" stroke-width="1">
+               Welcome to John's Website!
+     </text>
+    <svg>
+      <circle cx="30%" cy="40%" r="2" fill="white" stroke="black" fill-opacity="1" />
+      <circle cx="36%" cy="50%" r="3" fill="white" stroke="black" fill-opacity="1" />
+      <circle cx="47%" cy="63%" r="1" fill="white" stroke="black" fill-opacity="1" />
+      <circle cx="97%" cy="21%" r="1" fill="white" stroke="black" fill-opacity="1" />
+      <circle cx="67%" cy="10%" r="1" fill="white" stroke="black" fill-opacity="1" />
+      <circle cx="88%" cy="98%" r="3" fill="white" stroke="black" fill-opacity="1" />
+      <circle cx="82%" cy="56%" r="2" fill="white" stroke="black" fill-opacity="1" />
+      <circle cx="54%" cy="20%" r="2" fill="white" stroke="black" fill-opacity="1" />
+      <circle cx="40%" cy="13%" r="1" fill="white" stroke="black" fill-opacity="1" />
+      <circle cx="75%" cy="34%" r="1" fill="white" stroke="black" fill-opacity="1" />
+      <circle cx="61%" cy="38%" r="1" fill="white" stroke="black" fill-opacity="1" />
+      <circle cx="90%" cy="77%" r="2" fill="white" stroke="black" fill-opacity="1" />
+      <circle cx="70%" cy="88%" r="2" fill="white" stroke="black" fill-opacity="1" />
+      <circle cx="60%" cy="80%" r="3" fill="white" stroke="black" fill-opacity="1" />
+      <circle cx="36%" cy="70%" r="1" fill="white" stroke="black" fill-opacity="1" />
+      <circle cx="59%" cy="44%" r="1" fill="white" stroke="black" fill-opacity="1" />
+      <circle cx="51%" cy="38%" r="1" fill="white" stroke="black" fill-opacity="1" />
+    </svg>
+
+  <nav class="menue">
+    <ul class="nav_links">
+    <li><a href="index.html"><button>Homepage</button></a></li>
+    <li><a href="views/two.html"><button>Page 2</button></a></li>
+    <li><a href="views/three.html"><button>Page 3</button></a></li>
+    </ul>
+  </nav>
+
+
+  <h1>Assignment 2</h1>
+  <h2 class="css-question">How to Apply CSS to HTML</h2>
+  <p class="css-question">
+    Often times, CSS is applied via a external stylesheet. To create one, create a file named styles.CSS, and write your CSS code in there
+    Make sure it's in the root directory, and add this code to your head tag:
+  </p>
+  <p class="css-question">
+    <code>&lt;link rel="stylesheet" href="styles.css?v=1.0"&gt;</code>
+  </p>
+
+  <h2 class="js-question">How to Use JavaScript in a Webpage</h2>
+  <p class="js-question">
+    JavaScript is used to make dynamic changes to your website. You can do things like changing elements of your HTMl file, and much more.
+  </p>
+  <p class="js-question">
+    When your code gets long it's good to import your JavaScript as a separate file. To do this, write your code in a file with a .js file format.
+  </p>
+  <p class="js-question">
+    Inside a 'script' tag, link your HTML file to the destination of your JS code. <code>&lt;script src="path/to/my/script.js"&gt;&lt;/script&gt;</code>
+  </p>
+  <p class="js-question">
+    The button below is an example application of JavaScript.
+  </p>
+  <div class="buttons">
+    <button id="js-button" onclick="doSomething()">Click me</button>
+  </div>
+
+  <script>
+    function doSomething(){
+      alert("This was done using JavaScript!");
+    }
+  </script>
+
 </body>
 
 </html>
